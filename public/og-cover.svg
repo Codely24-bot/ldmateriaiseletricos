@@ -1,0 +1,18 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#07111F"/>
+  <rect width="1200" height="630" fill="url(#paint0_radial)"/>
+  <rect x="72" y="72" width="1056" height="486" rx="44" fill="#091220" stroke="rgba(72,179,255,0.24)"/>
+  <text x="116" y="220" fill="#FFD54A" font-family="Sora, Arial, sans-serif" font-size="32" font-weight="700" letter-spacing="8">LD MATERIAIS ELÉTRICOS</text>
+  <text x="116" y="320" fill="white" font-family="Sora, Arial, sans-serif" font-size="68" font-weight="700">Tudo em materiais elétricos</text>
+  <text x="116" y="392" fill="white" font-family="Sora, Arial, sans-serif" font-size="68" font-weight="700">para sua obra ou projeto</text>
+  <text x="116" y="466" fill="#D7E4FF" font-family="Manrope, Arial, sans-serif" font-size="30" font-weight="600">Qualidade, segurança e variedade com atendimento rápido pelo WhatsApp.</text>
+  <circle cx="1000" cy="200" r="96" fill="rgba(255,213,74,0.18)"/>
+  <circle cx="920" cy="372" r="132" fill="rgba(10,109,255,0.22)"/>
+  <defs>
+    <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1050 118) rotate(139.958) scale(721.016 1217.18)">
+      <stop stop-color="#0B55E8"/>
+      <stop offset="1" stop-color="#07111F"/>
+    </radialGradient>
+  </defs>
+</svg>
+

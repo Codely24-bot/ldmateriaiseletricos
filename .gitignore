@@ -1,0 +1,11 @@
+node_modules
+dist
+.DS_Store
+*.log
+*.tsbuildinfo
+*.d.ts
+*.js
+!.eslintrc.js
+!postcss.config.js
+.agents
+.git.broken-backup

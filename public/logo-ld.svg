@@ -1,0 +1,22 @@
+<svg width="540" height="180" viewBox="0 0 540 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="180" height="180" rx="42" fill="#07111F"/>
+  <rect x="12" y="12" width="156" height="156" rx="34" fill="url(#paint0_linear)"/>
+  <path d="M46 130V50H70V109H110V130H46Z" fill="white"/>
+  <path d="M119 130V50H139.5C160.315 50 177 66.6848 177 87.5V92.5C177 113.315 160.315 130 139.5 130H119ZM142 109C151.941 109 160 100.941 160 91V89C160 79.0589 151.941 71 142 71H136V109H142Z" fill="#FFD54A"/>
+  <path d="M41 147C73.6667 118.333 103.333 104 130 104C153.333 104 167.667 111.333 173 126" stroke="#F24E3D" stroke-width="6" stroke-linecap="round"/>
+  <path d="M185 53H522" stroke="url(#paint1_linear)" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"/>
+  <text x="206" y="92" fill="white" font-family="Sora, Arial, sans-serif" font-size="40" font-weight="700" letter-spacing="10">LD</text>
+  <text x="206" y="126" fill="#D7E4FF" font-family="Manrope, Arial, sans-serif" font-size="28" font-weight="600">Materiais Elétricos</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="24" y1="18" x2="168" y2="164" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E72FF"/>
+      <stop offset="0.5" stop-color="#0C2D7F"/>
+      <stop offset="1" stop-color="#081321"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear" x1="185" y1="54" x2="522" y2="54" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#48B3FF"/>
+      <stop offset="1" stop-color="#FFD54A" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>
+

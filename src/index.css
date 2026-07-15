@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-brand-night font-sans text-white antialiased;
+    background-image:
+      radial-gradient(circle at top left, rgba(10, 109, 255, 0.2), transparent 25%),
+      linear-gradient(180deg, #07111f 0%, #040811 100%);
+  }
+
+  * {
+    scrollbar-color: rgba(72, 179, 255, 0.4) rgba(8, 18, 31, 0.8);
+  }
+
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: rgba(8, 18, 31, 0.8);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    border: 3px solid rgba(8, 18, 31, 0.8);
+    background: linear-gradient(180deg, rgba(255, 213, 74, 0.75), rgba(72, 179, 255, 0.55));
+  }
+
+  ::selection {
+    background: rgba(255, 213, 74, 0.3);
+    color: #fff;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply border border-brand-line bg-white/5 backdrop-blur;
+  }
+
+  .electric-border {
+    box-shadow:
+      inset 0 0 0 1px rgba(72, 179, 255, 0.14),
+      0 0 0 1px rgba(72, 179, 255, 0.08);
+  }
+
+  .glow-button {
+    @apply bg-[linear-gradient(135deg,#ffd54a_0%,#f7c728_20%,#0a6dff_85%)] text-slate-950 transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_18px_40px_rgba(10,109,255,0.28)];
+  }
+
+  .field-base {
+    @apply w-full rounded-2xl border border-brand-line bg-white/5 px-4 py-3 text-sm text-white outline-none transition placeholder:text-slate-500 focus:border-brand-yellow focus:bg-white/10;
+  }
+}
