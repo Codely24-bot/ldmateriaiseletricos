@@ -29,15 +29,19 @@ type HeaderProps = {
 
 function Brand() {
   return (
-    <div className="flex items-center gap-3 text-left">
+    <div className="flex items-center gap-4 text-left">
       <img
         src="/logo-real.jpeg"
         alt={companyInfo.name}
-        className="h-12 w-12 rounded-2xl border border-sky-100 object-cover object-center shadow-[0_12px_30px_rgba(10,109,255,0.14)]"
+        className="h-16 w-16 rounded-[22px] border border-sky-100 object-cover object-center shadow-[0_12px_30px_rgba(10,109,255,0.14)] sm:h-20 sm:w-20"
       />
-      <div>
-        <p className="font-display text-lg font-semibold tracking-[0.3em] text-brand-ocean">LD</p>
-        <p className="text-sm font-medium text-slate-600">{companyInfo.name}</p>
+      <div className="min-w-0">
+        <p className="font-display text-[1.35rem] font-bold uppercase leading-none tracking-[0.28em] text-brand-ocean sm:text-[1.55rem]">
+          <span>L</span>
+          <span className="mx-1 tracking-normal text-brand-red">&amp;</span>
+          <span>D</span>
+        </p>
+        <p className="mt-1 text-xs font-medium text-slate-600 sm:text-sm">{companyInfo.name}</p>
       </div>
     </div>
   );
