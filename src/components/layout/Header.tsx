@@ -33,11 +33,11 @@ function Brand() {
       <img
         src="/logo-real.jpeg"
         alt={companyInfo.name}
-        className="h-12 w-12 rounded-2xl object-cover object-center shadow-glow"
+        className="h-12 w-12 rounded-2xl border border-sky-100 object-cover object-center shadow-[0_12px_30px_rgba(10,109,255,0.14)]"
       />
       <div>
-        <p className="font-display text-lg font-semibold tracking-[0.3em] text-white">LD</p>
-        <p className="text-sm font-medium text-slate-300">{companyInfo.name}</p>
+        <p className="font-display text-lg font-semibold tracking-[0.3em] text-brand-ocean">LD</p>
+        <p className="text-sm font-medium text-slate-600">{companyInfo.name}</p>
       </div>
     </div>
   );
@@ -64,16 +64,16 @@ function DepartmentsMegaMenu({
 
   return (
     <div className="group relative">
-      <div className="inline-flex cursor-default items-center gap-3 rounded-full bg-brand-yellow px-6 py-3 text-sm font-bold uppercase tracking-[0.24em] text-slate-950 transition group-hover:bg-[#ffe17d]">
+      <div className="inline-flex cursor-default items-center gap-3 rounded-full border border-sky-200 bg-white px-6 py-3 text-sm font-bold uppercase tracking-[0.24em] text-brand-ocean shadow-[0_10px_24px_rgba(10,109,255,0.08)] transition group-hover:bg-sky-50">
         Todos os departamentos
         <ChevronDown className="h-4 w-4 transition group-hover:rotate-180" />
       </div>
 
       <div className="pointer-events-none absolute left-0 top-full z-50 mt-3 w-[860px] max-w-[calc(100vw-3rem)] opacity-0 transition duration-200 group-hover:pointer-events-auto group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100">
-        <div className="overflow-hidden rounded-[18px] border border-brand-line bg-[#0a1322] shadow-[0_22px_60px_rgba(2,10,28,0.6)]">
+        <div className="overflow-hidden rounded-[18px] border border-sky-100 bg-white shadow-[0_22px_60px_rgba(10,109,255,0.14)]">
           <div className="grid grid-cols-[0.84fr_1.16fr]">
-            <div className="max-h-[34rem] overflow-y-auto border-r border-brand-line bg-[#0b1628] p-4">
-              <p className="text-xs font-bold uppercase tracking-[0.32em] text-brand-yellow">
+            <div className="max-h-[34rem] overflow-y-auto border-r border-sky-100 bg-sky-50/70 p-4">
+              <p className="text-xs font-bold uppercase tracking-[0.32em] text-brand-ocean">
                 Departamentos
               </p>
               <div className="mt-3 grid gap-1">
@@ -89,17 +89,17 @@ function DepartmentsMegaMenu({
                       onClick={() => onNavigateDepartment(category.id)}
                       className={`rounded-xl border px-3 py-2 text-left transition ${
                         isActive
-                          ? "border-brand-line bg-[#172338]"
-                          : "border-[#101c31] bg-[#0f182a] hover:border-brand-line hover:bg-[#152033]"
+                          ? "border-sky-200 bg-white"
+                          : "border-transparent bg-transparent hover:border-sky-100 hover:bg-white"
                       }`}
                     >
                       <div className="flex items-center justify-between gap-3">
                         <div>
-                          <p className="font-display text-[15px] font-semibold text-white">
+                          <p className="font-display text-[15px] font-semibold text-slate-950">
                             {category.name}
                           </p>
                         </div>
-                        <ChevronRight className="h-4 w-4 shrink-0 text-slate-500" />
+                        <ChevronRight className="h-4 w-4 shrink-0 text-slate-400" />
                       </div>
                     </button>
                   );
@@ -107,28 +107,28 @@ function DepartmentsMegaMenu({
               </div>
             </div>
 
-            <div className="bg-[#0c1525] p-4">
+            <div className="bg-white p-4">
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <p className="text-xs font-bold uppercase tracking-[0.32em] text-brand-sky">
+                  <p className="text-xs font-bold uppercase tracking-[0.32em] text-brand-ocean">
                     {activeDepartment.name}
                   </p>
-                  <h3 className="mt-1 max-w-xl font-display text-xl font-semibold text-white">
+                  <h3 className="mt-1 max-w-xl font-display text-xl font-semibold text-slate-950">
                     {activeDepartment.heroTitle}
                   </h3>
                 </div>
                 <button
                   type="button"
                   onClick={() => onNavigateDepartment(activeDepartment.id)}
-                  className="shrink-0 rounded-full border border-brand-line px-3 py-1.5 text-xs font-semibold text-white transition hover:border-brand-yellow hover:text-brand-yellow"
+                  className="shrink-0 rounded-full border border-sky-100 px-3 py-1.5 text-xs font-semibold text-slate-700 transition hover:border-brand-ocean hover:text-brand-ocean"
                 >
                   Ver todo departamento
                 </button>
               </div>
 
               <div className="mt-4 grid grid-cols-[0.9fr_1.1fr] gap-4">
-                <div className="rounded-[16px] border border-brand-line bg-[#101b2d] p-3">
-                  <p className="text-xs font-bold uppercase tracking-[0.28em] text-brand-yellow">
+                <div className="rounded-[16px] border border-sky-100 bg-sky-50/60 p-3">
+                  <p className="text-xs font-bold uppercase tracking-[0.28em] text-brand-ocean">
                     Subcategorias
                   </p>
                   <div className="mt-3 grid gap-1">
@@ -137,41 +137,41 @@ function DepartmentsMegaMenu({
                         key={subcategory}
                         type="button"
                         onClick={() => onNavigateDepartment(activeDepartment.id)}
-                        className="flex items-center justify-between rounded-xl border border-[#152238] bg-[#0d1728] px-3 py-2 text-left text-sm font-medium text-slate-100 transition hover:border-brand-line hover:bg-[#162133]"
+                        className="flex items-center justify-between rounded-xl border border-transparent bg-white px-3 py-2 text-left text-sm font-medium text-slate-700 transition hover:border-sky-100 hover:bg-sky-50"
                       >
                         <span>{subcategory}</span>
-                        <ChevronRight className="h-4 w-4 text-slate-500" />
+                        <ChevronRight className="h-4 w-4 text-slate-400" />
                       </button>
                     ))}
                   </div>
                 </div>
 
-                <div className="rounded-[16px] border border-brand-line bg-[#101b2d] p-3">
-                  <p className="text-xs font-bold uppercase tracking-[0.28em] text-brand-sky">
+                <div className="rounded-[16px] border border-sky-100 bg-sky-50/60 p-3">
+                  <p className="text-xs font-bold uppercase tracking-[0.28em] text-brand-ocean">
                     Produtos relacionados
                   </p>
                   <div className="mt-3 grid gap-1">
-                  {relatedProducts.map((product) => (
-                    <button
-                      key={product.id}
-                      type="button"
-                      onClick={() => onNavigateDepartment(activeDepartment.id)}
-                        className="rounded-xl border border-[#152238] bg-[#0d1728] px-3 py-2 text-left transition hover:border-brand-line hover:bg-[#162133]"
-                    >
-                      <div className="min-w-0">
-                        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-sky">
-                          {product.category}
-                        </p>
-                        <p className="mt-1 font-display text-[15px] font-semibold text-white">
-                          {product.name}
-                        </p>
-                        <div className="mt-1 flex items-center gap-3 text-sm">
-                          <span className="text-slate-300">{product.price}</span>
-                          <span className="text-emerald-400">{product.availability}</span>
+                    {relatedProducts.map((product) => (
+                      <button
+                        key={product.id}
+                        type="button"
+                        onClick={() => onNavigateDepartment(activeDepartment.id)}
+                        className="rounded-xl border border-transparent bg-white px-3 py-2 text-left transition hover:border-sky-100 hover:bg-sky-50"
+                      >
+                        <div className="min-w-0">
+                          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-ocean">
+                            {product.category}
+                          </p>
+                          <p className="mt-1 font-display text-[15px] font-semibold text-slate-950">
+                            {product.name}
+                          </p>
+                          <div className="mt-1 flex items-center gap-3 text-sm">
+                            <span className="text-slate-500">{product.price}</span>
+                            <span className="text-emerald-600">{product.availability}</span>
+                          </div>
                         </div>
-                      </div>
-                    </button>
-                  ))}
+                      </button>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -206,11 +206,11 @@ export function Header({
   return (
     <header
       id="inicio"
-      className="sticky top-0 z-50 border-y border-brand-line bg-slate-950/95 backdrop-blur"
+      className="sticky top-0 z-50 border-y border-sky-100 bg-white/95 backdrop-blur"
     >
-      <div className="hidden border-b border-brand-line lg:block">
+      <div className="hidden border-b border-sky-100 lg:block">
         <div className="mx-auto flex max-w-7xl items-center justify-center gap-6 px-4 py-2.5 text-xs md:px-6">
-          <div className="flex items-center justify-center gap-6 text-slate-300">
+          <div className="flex items-center justify-center gap-6 text-slate-500">
             {topHighlights.map((item) => (
               <span key={item} className="whitespace-nowrap">
                 {item}
@@ -226,19 +226,19 @@ export function Header({
             <Brand />
           </button>
 
-          <label className="hidden flex-1 items-center gap-3 rounded-full border border-brand-line bg-white px-5 py-3 shadow-card lg:flex">
+          <label className="hidden flex-1 items-center gap-3 rounded-full border border-sky-100 bg-slate-50 px-5 py-3 shadow-[0_10px_24px_rgba(10,109,255,0.06)] lg:flex">
             <Search className="h-5 w-5 text-brand-ocean" />
             <input
               type="text"
-              placeholder="O que você procura em materiais elétricos?"
-              className="w-full bg-transparent text-sm text-slate-900 outline-none placeholder:text-slate-500"
-              aria-label="Buscar no catálogo"
+              placeholder="O que voce procura em materiais eletricos?"
+              className="w-full bg-transparent text-sm text-slate-900 outline-none placeholder:text-slate-400"
+              aria-label="Buscar no catalogo"
             />
           </label>
 
           <div className="ml-auto hidden items-center gap-3 lg:flex">
             <a
-              href={buildGenericMessage("Olá! Quero ajuda para comprar na loja online da LD Materiais Elétricos.")}
+              href={buildGenericMessage("Ola! Quero ajuda para comprar na loja online da LD Materiais Eletricos.")}
               target="_blank"
               rel="noreferrer"
               className="glow-button inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-semibold"
@@ -248,7 +248,7 @@ export function Header({
             </a>
             <button
               type="button"
-              className="inline-flex items-center gap-2 rounded-full border border-brand-line bg-white/5 px-4 py-3 text-sm font-semibold text-white transition hover:border-brand-yellow hover:text-brand-yellow"
+              className="inline-flex items-center gap-2 rounded-full border border-sky-100 bg-white px-4 py-3 text-sm font-semibold text-slate-800 transition hover:border-brand-ocean hover:text-brand-ocean"
             >
               <ShoppingCart className="h-4 w-4" />
               Carrinho
@@ -259,24 +259,24 @@ export function Header({
             type="button"
             aria-label={open ? "Fechar menu" : "Abrir menu"}
             onClick={() => setOpen((value) => !value)}
-            className="ml-auto inline-flex h-11 w-11 items-center justify-center rounded-full border border-brand-line text-white lg:hidden"
+            className="ml-auto inline-flex h-11 w-11 items-center justify-center rounded-full border border-sky-100 bg-white text-slate-800 lg:hidden"
           >
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
         </div>
 
-        <label className="mt-4 flex items-center gap-3 rounded-full border border-brand-line bg-white px-4 py-3 shadow-card lg:hidden">
+        <label className="mt-4 flex items-center gap-3 rounded-full border border-sky-100 bg-slate-50 px-4 py-3 shadow-[0_10px_24px_rgba(10,109,255,0.06)] lg:hidden">
           <Search className="h-5 w-5 text-brand-ocean" />
           <input
             type="text"
             placeholder="Buscar produtos"
-            className="w-full bg-transparent text-sm text-slate-900 outline-none placeholder:text-slate-500"
+            className="w-full bg-transparent text-sm text-slate-900 outline-none placeholder:text-slate-400"
             aria-label="Buscar produtos"
           />
         </label>
       </div>
 
-      <div className="hidden border-t border-brand-line lg:block">
+      <div className="hidden border-t border-sky-100 lg:block">
         <div className="mx-auto flex max-w-7xl items-center gap-6 px-4 py-3 md:px-6">
           <DepartmentsMegaMenu
             activeDepartmentId={activeDepartmentId}
@@ -288,10 +288,10 @@ export function Header({
                 key={item.href}
                 type="button"
                 onClick={() => handleNavigationClick(item.href)}
-                className={`font-semibold transition hover:text-brand-yellow ${
+                className={`font-semibold transition hover:text-brand-ocean ${
                   item.href === "#produtos" && activePage === "produtos"
-                    ? "text-brand-yellow"
-                    : "text-slate-100"
+                    ? "text-brand-ocean"
+                    : "text-slate-700"
                 }`}
               >
                 {item.label}
@@ -308,10 +308,10 @@ export function Header({
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
             transition={{ duration: 0.28, ease: "easeOut" }}
-            className="border-t border-brand-line bg-slate-950/95 p-6 shadow-card backdrop-blur lg:hidden"
+            className="border-t border-sky-100 bg-white p-6 shadow-[0_18px_40px_rgba(10,109,255,0.08)] lg:hidden"
           >
             <div className="mx-auto max-w-7xl">
-              <div className="mb-5 border-b border-brand-line pb-5">
+              <div className="mb-5 border-b border-sky-100 pb-5">
                 <button type="button" onClick={() => handleNavigationClick("#inicio")}>
                   <Brand />
                 </button>
@@ -322,15 +322,15 @@ export function Header({
                     key={item.href}
                     type="button"
                     onClick={() => handleNavigationClick(item.href)}
-                    className="rounded-2xl border border-transparent px-4 py-3 text-left text-base font-semibold text-slate-100 transition hover:border-brand-line hover:bg-white/5"
+                    className="rounded-2xl border border-transparent px-4 py-3 text-left text-base font-semibold text-slate-800 transition hover:border-sky-100 hover:bg-sky-50"
                   >
                     {item.label}
                   </button>
                 ))}
               </nav>
 
-              <div className="mt-6 rounded-[24px] border border-brand-line bg-white/5 p-4">
-                <p className="text-xs font-bold uppercase tracking-[0.24em] text-brand-yellow">
+              <div className="mt-6 rounded-[24px] border border-sky-100 bg-sky-50/70 p-4">
+                <p className="text-xs font-bold uppercase tracking-[0.24em] text-brand-ocean">
                   Departamentos
                 </p>
                 <div className="mt-4 grid gap-3">
@@ -342,7 +342,7 @@ export function Header({
                         onNavigateDepartment(category.id);
                         setOpen(false);
                       }}
-                      className="rounded-2xl border border-transparent px-4 py-3 text-left text-sm font-semibold text-slate-100 transition hover:border-brand-line hover:bg-white/5"
+                      className="rounded-2xl border border-transparent bg-white px-4 py-3 text-left text-sm font-semibold text-slate-800 transition hover:border-sky-100 hover:bg-sky-50"
                     >
                       {category.name}
                     </button>
@@ -351,7 +351,7 @@ export function Header({
               </div>
 
               <a
-                href={buildGenericMessage("Olá! Quero ajuda para comprar na loja online da LD Materiais Elétricos.")}
+                href={buildGenericMessage("Ola! Quero ajuda para comprar na loja online da LD Materiais Eletricos.")}
                 target="_blank"
                 rel="noreferrer"
                 className="glow-button mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold"

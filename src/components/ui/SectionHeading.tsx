@@ -5,7 +5,7 @@ type SectionHeadingProps = {
   title: string;
   description: ReactNode;
   align?: "left" | "center";
-  tone?: "dark" | "light";
+  tone?: "light" | "dark";
 };
 
 export function SectionHeading({
@@ -13,15 +13,15 @@ export function SectionHeading({
   title,
   description,
   align = "left",
-  tone = "dark",
+  tone = "light",
 }: SectionHeadingProps) {
   const alignment = align === "center" ? "mx-auto text-center" : "";
-  const titleColor = tone === "light" ? "text-slate-950" : "text-white";
-  const descriptionColor = tone === "light" ? "text-slate-600" : "text-slate-300";
+  const titleColor = tone === "dark" ? "text-white" : "text-slate-950";
+  const descriptionColor = tone === "dark" ? "text-slate-200" : "text-slate-600";
   const eyebrowClasses =
-    tone === "light"
-      ? "border-brand-ocean/10 bg-brand-ocean/5 text-brand-ocean"
-      : "border-brand-line bg-white/5 text-brand-yellow";
+    tone === "dark"
+      ? "border-white/20 bg-white/10 text-white"
+      : "border-brand-ocean/15 bg-brand-ocean/5 text-brand-ocean";
 
   return (
     <div className={`max-w-3xl ${alignment}`}>

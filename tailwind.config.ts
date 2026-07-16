@@ -10,7 +10,7 @@ export default {
           ocean: "#0a6dff",
           cobalt: "#1137ff",
           sky: "#48b3ff",
-          yellow: "#ffd54a",
+          yellow: "#f8fbff",
           red: "#f24e3d",
           slate: "#0c1727",
           line: "rgba(112, 152, 255, 0.18)",

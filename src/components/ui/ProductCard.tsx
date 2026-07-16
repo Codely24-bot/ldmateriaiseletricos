@@ -33,7 +33,7 @@ export function ProductCard({
           className="h-56 w-full object-cover transition duration-500 group-hover:scale-[1.03]"
           loading="lazy"
         />
-        <span className="absolute left-4 top-4 inline-flex items-center gap-2 rounded-full bg-brand-yellow px-3 py-1 text-xs font-bold uppercase tracking-[0.22em] text-slate-950">
+        <span className="absolute left-4 top-4 inline-flex items-center gap-2 rounded-full border border-white/70 bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-[0.22em] text-brand-ocean shadow-sm">
           <BadgeCheck className="h-3.5 w-3.5" />
           {badge}
         </span>
@@ -73,7 +73,7 @@ export function ProductCard({
             href={messageUrl}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-brand-yellow px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-[#ffe17d]"
+            className="inline-flex items-center gap-2 rounded-full border border-brand-ocean/20 bg-white px-4 py-2 text-sm font-semibold text-brand-ocean transition hover:bg-sky-50"
           >
             <MessageCircleMore className="h-4 w-4" />
             WhatsApp

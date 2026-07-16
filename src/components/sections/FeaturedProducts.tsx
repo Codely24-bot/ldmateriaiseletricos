@@ -1,4 +1,5 @@
-import { categories, featuredProducts } from "../../data/siteContent";
+import { featuredProducts } from "../../data/featuredProducts";
+import { categories } from "../../data/siteContent";
 import { Reveal } from "../ui/Reveal";
 import { ProductCard } from "../ui/ProductCard";
 import { SectionHeading } from "../ui/SectionHeading";
@@ -22,7 +23,7 @@ export function FeaturedProducts({ selectedCategory, onCategoryChange }: Feature
         <SectionHeading
           eyebrow="Vitrine da loja"
           title="Produtos em destaque com leitura de e-commerce"
-          description="Mantive os itens como demonstrativos, mas a vitrine agora segue uma linguagem mais próxima de loja online: busca, filtros, preço, disponibilidade e CTA de compra."
+          description="A vitrine agora usa imagens PNG reais, alinhadas aos produtos exibidos no site."
           tone="light"
         />
 
@@ -65,8 +66,8 @@ export function FeaturedProducts({ selectedCategory, onCategoryChange }: Feature
             ))
           ) : (
             <div className="rounded-[28px] border border-dashed border-slate-300 bg-white p-8 text-slate-600 lg:col-span-2 xl:col-span-3">
-              Nenhum produto demonstrativo encontrado para os filtros atuais. Ajuste a busca ou
-              selecione outra categoria.
+              Nenhum produto encontrado para os filtros atuais. Ajuste a busca ou selecione outra
+              categoria.
             </div>
           )}
         </div>

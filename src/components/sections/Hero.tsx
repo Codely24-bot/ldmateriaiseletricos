@@ -23,7 +23,7 @@ export function Hero({ onPrimaryClick, onQuoteClick }: HeroProps) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.55 }}
-              className="inline-flex rounded-full border border-brand-line bg-white/5 px-4 py-2 text-xs font-bold uppercase tracking-[0.3em] text-brand-yellow"
+              className="inline-flex rounded-full border border-brand-line bg-white/5 px-4 py-2 text-xs font-bold uppercase tracking-[0.3em] text-brand-sky"
             >
               Loja online LD Materiais Elétricos
             </motion.div>
@@ -62,7 +62,7 @@ export function Hero({ onPrimaryClick, onQuoteClick }: HeroProps) {
               <button
                 type="button"
                 onClick={onQuoteClick}
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-line bg-white/5 px-6 py-4 text-base font-semibold text-white transition hover:border-brand-sky hover:bg-white/10 hover:text-brand-yellow"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-line bg-white/5 px-6 py-4 text-base font-semibold text-white transition hover:border-brand-sky hover:bg-white/10 hover:text-brand-sky"
               >
                 Pedidos especiais
               </button>
@@ -91,7 +91,7 @@ export function Hero({ onPrimaryClick, onQuoteClick }: HeroProps) {
                     transition={{ duration: 0.5, delay: 0.32 + index * 0.06 }}
                     className="glass-panel flex items-center gap-3 rounded-2xl px-4 py-4"
                   >
-                    <div className="rounded-xl bg-brand-yellow/15 p-2 text-brand-yellow">
+                    <div className="rounded-xl bg-brand-sky/15 p-2 text-brand-sky">
                       <Icon className="h-5 w-5" />
                     </div>
                     <span className="text-sm font-semibold text-slate-100">{item}</span>
@@ -109,7 +109,7 @@ export function Hero({ onPrimaryClick, onQuoteClick }: HeroProps) {
                   transition={{ duration: 0.5, delay: 0.42 + index * 0.08 }}
                   className="rounded-[24px] border border-brand-line bg-slate-950/65 px-5 py-4 shadow-card"
                 >
-                  <p className="font-display text-3xl font-semibold text-brand-yellow">{item.value}</p>
+                  <p className="font-display text-3xl font-semibold text-white">{item.value}</p>
                   <p className="mt-2 text-sm text-slate-300">{item.label}</p>
                 </motion.div>
               ))}
@@ -141,7 +141,7 @@ export function Hero({ onPrimaryClick, onQuoteClick }: HeroProps) {
                   href={buildGenericMessage("Olá! Quero enviar minha lista de materiais para orçamento.")}
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-[24px] border border-brand-line bg-white/5 p-4 text-left transition hover:border-brand-yellow hover:bg-white/10"
+                  className="rounded-[24px] border border-brand-line bg-white/5 p-4 text-left transition hover:border-brand-sky hover:bg-white/10"
                 >
                   <p className="text-sm font-semibold text-white">Enviar lista pelo WhatsApp</p>
                   <p className="mt-2 text-sm text-slate-400">{companyInfo.whatsappDisplay}</p>
