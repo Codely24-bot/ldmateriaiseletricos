@@ -7,7 +7,6 @@ import { FinalCTA } from "./components/sections/FinalCTA";
 import { Professionals } from "./components/sections/Professionals";
 import { ProductsPage } from "./components/sections/ProductsPage";
 import { QuoteForm } from "./components/sections/QuoteForm";
-import { Testimonials } from "./components/sections/Testimonials";
 import { Footer } from "./components/layout/Footer";
 import { Header } from "./components/layout/Header";
 import { WhatsAppButton } from "./components/ui/WhatsAppButton";
@@ -105,7 +104,6 @@ export default function App() {
             <QuoteForm />
             <About />
             <Professionals />
-            <Testimonials />
             <FinalCTA onQuoteClick={() => scrollToSection("orcamento")} />
           </>
         )}

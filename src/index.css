@@ -39,6 +39,15 @@
     background: rgba(72, 179, 255, 0.28);
     color: #07111f;
   }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @layer components {
@@ -53,7 +62,15 @@
   }
 
   .glow-button {
-    @apply bg-[linear-gradient(135deg,#ffffff_0%,#e6f1ff_24%,#0a6dff_88%)] text-slate-950 transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_18px_40px_rgba(10,109,255,0.22)];
+    @apply border border-brand-night bg-brand-night text-white transition duration-300 hover:-translate-y-0.5 hover:border-brand-sky hover:bg-[#0d1c31] hover:text-white hover:shadow-[0_18px_40px_rgba(7,17,31,0.32)];
+  }
+
+  .brand-button-muted {
+    @apply border border-brand-night bg-brand-night text-white transition duration-300 hover:border-brand-sky hover:bg-[#0d1c31] hover:text-white hover:shadow-[0_16px_34px_rgba(7,17,31,0.24)];
+  }
+
+  .brand-icon-button {
+    @apply border border-brand-night bg-brand-night text-white transition duration-300 hover:-translate-y-0.5 hover:border-brand-sky hover:bg-[#0d1c31] hover:text-white hover:shadow-[0_16px_34px_rgba(7,17,31,0.24)];
   }
 
   .field-base {
