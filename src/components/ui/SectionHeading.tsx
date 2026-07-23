@@ -12,7 +12,7 @@ export function SectionHeading({
   eyebrow,
   title,
   description,
-  align = "left",
+  align = "center",
   tone = "light",
 }: SectionHeadingProps) {
   const alignment = align === "center" ? "mx-auto text-center" : "";

@@ -58,13 +58,13 @@ export function Categories({ onSelectCategory }: CategoriesProps) {
                     className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
                     loading="lazy"
                   />
-                  <div className="absolute left-4 top-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-white/92 text-brand-ocean shadow-lg md:left-5 md:top-5 md:h-14 md:w-14">
+                  <div className="absolute left-1/2 top-4 inline-flex h-12 w-12 -translate-x-1/2 items-center justify-center rounded-2xl bg-white/92 text-brand-ocean shadow-lg md:top-5 md:h-14 md:w-14">
                     <Icon className="h-6 w-6 md:h-7 md:w-7" />
                   </div>
                 </div>
 
-                <div className="flex h-full flex-col p-4 md:p-6">
-                  <div className="flex items-start justify-between gap-3">
+                <div className="flex h-full flex-col items-center p-4 text-center md:p-6">
+                  <div className="flex flex-col items-center justify-center gap-3">
                     <h3 className="font-display text-xl font-semibold text-slate-950 md:text-2xl">
                       {category.name}
                     </h3>

@@ -6,7 +6,7 @@ import { SectionHeading } from "../ui/SectionHeading";
 export function About() {
   return (
     <section id="sobre" className="mx-auto max-w-7xl px-4 py-24 md:px-6">
-      <div className="grid gap-10 xl:grid-cols-[0.95fr_1.05fr] xl:items-center">
+      <div className="grid gap-10 text-center xl:grid-cols-[0.95fr_1.05fr] xl:items-center">
         <Reveal>
           <div className="glass-panel electric-border overflow-hidden rounded-[36px] p-5">
             <img
@@ -29,7 +29,7 @@ export function About() {
             {aboutHighlights.map((item) => (
               <article
                 key={item.title}
-                className="rounded-[26px] border border-sky-100 bg-white p-5 shadow-[0_16px_34px_rgba(10,109,255,0.06)]"
+                className="rounded-[26px] border border-sky-100 bg-white p-5 text-center shadow-[0_16px_34px_rgba(10,109,255,0.06)]"
               >
                 <h3 className="font-display text-xl font-semibold text-slate-950">{item.title}</h3>
                 <p className="mt-3 text-sm leading-6 text-slate-600">{item.text}</p>
@@ -37,7 +37,7 @@ export function About() {
             ))}
           </div>
 
-          <div className="mt-8 rounded-[26px] border border-sky-100 bg-sky-50/60 p-5">
+          <div className="mt-8 rounded-[26px] border border-sky-100 bg-sky-50/60 p-5 text-center">
             <p className="text-xs font-bold uppercase tracking-[0.24em] text-brand-ocean">
               Contato institucional
             </p>

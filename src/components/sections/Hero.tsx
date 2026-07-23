@@ -24,7 +24,7 @@ export function Hero({ onPrimaryClick, onQuoteClick }: HeroProps) {
       </div>
 
       <div className="relative mx-auto max-w-7xl px-4 pb-16 pt-12 md:px-6">
-        <div className="max-w-4xl">
+        <div className="mx-auto max-w-4xl text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -37,7 +37,7 @@ export function Hero({ onPrimaryClick, onQuoteClick }: HeroProps) {
             initial={{ opacity: 0, y: 26 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.08 }}
-            className="mt-6 max-w-3xl font-display text-4xl font-semibold leading-tight text-white md:text-5xl"
+            className="mx-auto mt-6 max-w-3xl font-display text-4xl font-semibold leading-tight text-white md:text-5xl"
           >
             Compre materiais eletricos com navegacao simples e visual de loja profissional
           </motion.h1>
@@ -45,7 +45,7 @@ export function Hero({ onPrimaryClick, onQuoteClick }: HeroProps) {
             initial={{ opacity: 0, y: 26 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.16 }}
-            className="mt-6 max-w-2xl text-lg leading-8 text-slate-300"
+            className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-300"
           >
             Estruturei a home para funcionar como vitrine de e-commerce: busca em destaque,
             departamentos visiveis, produtos com preco demonstrativo e atalhos para compra ou
@@ -55,7 +55,7 @@ export function Hero({ onPrimaryClick, onQuoteClick }: HeroProps) {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.24 }}
-            className="mt-8 flex flex-col gap-4 sm:flex-row"
+            className="mt-8 flex flex-col justify-center gap-4 sm:flex-row"
           >
             <button
               type="button"
@@ -74,7 +74,7 @@ export function Hero({ onPrimaryClick, onQuoteClick }: HeroProps) {
             </button>
           </motion.div>
 
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-8 flex flex-wrap justify-center gap-3">
             {storeDepartments.map((item) => (
               <span
                 key={item}
@@ -95,7 +95,7 @@ export function Hero({ onPrimaryClick, onQuoteClick }: HeroProps) {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.32 + index * 0.06 }}
-                  className="glass-panel flex items-center gap-3 rounded-2xl bg-white px-4 py-4"
+                  className="glass-panel flex items-center justify-center gap-3 rounded-2xl bg-white px-4 py-4 text-center"
                 >
                   <div className="rounded-xl bg-brand-sky/15 p-2 text-brand-sky">
                     <Icon className="h-5 w-5" />
@@ -113,7 +113,7 @@ export function Hero({ onPrimaryClick, onQuoteClick }: HeroProps) {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.42 + index * 0.08 }}
-                className="rounded-[24px] border border-brand-line bg-slate-950/65 px-5 py-4 shadow-card"
+                className="rounded-[24px] border border-brand-line bg-slate-950/65 px-5 py-4 text-center shadow-card"
               >
                 <p className="font-display text-3xl font-semibold text-white">{item.value}</p>
                 <p className="mt-2 text-sm text-slate-300">{item.label}</p>

@@ -28,7 +28,7 @@ export function FeaturedProducts({ selectedCategory, onCategoryChange }: Feature
         />
 
         <div className="mt-10 rounded-[30px] border border-slate-200 bg-white p-5 shadow-[0_18px_38px_rgba(6,18,38,0.08)]">
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap justify-center gap-3 text-center">
             <button
               type="button"
               onClick={() => onCategoryChange("all")}
@@ -65,7 +65,7 @@ export function FeaturedProducts({ selectedCategory, onCategoryChange }: Feature
               </Reveal>
             ))
           ) : (
-            <div className="rounded-[28px] border border-dashed border-slate-300 bg-white p-8 text-slate-600 lg:col-span-2 xl:col-span-3">
+            <div className="rounded-[28px] border border-dashed border-slate-300 bg-white p-8 text-center text-slate-600 lg:col-span-2 xl:col-span-3">
               Nenhum produto encontrado para os filtros atuais. Ajuste a busca ou selecione outra
               categoria.
             </div>

@@ -83,7 +83,7 @@ export function QuoteForm() {
   return (
     <section id="orcamento" className="relative py-24">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_0%,rgba(72,179,255,0.12),transparent_26%),radial-gradient(circle_at_80%_100%,rgba(10,109,255,0.12),transparent_25%)]" />
-      <div className="relative mx-auto grid max-w-7xl gap-10 px-4 md:px-6 xl:grid-cols-[0.9fr_1.1fr]">
+      <div className="relative mx-auto grid max-w-7xl gap-10 px-4 text-center md:px-6 xl:grid-cols-[0.9fr_1.1fr]">
         <Reveal>
           <div className="space-y-8">
             <SectionHeading
@@ -92,8 +92,8 @@ export function QuoteForm() {
               description="Envie sua lista de materiais e receba um orcamento personalizado. O formulario ja organiza as informacoes para o atendimento comercial pelo WhatsApp."
             />
 
-            <div className="rounded-[32px] border border-sky-100 bg-white p-6 shadow-[0_16px_34px_rgba(10,109,255,0.06)]">
-              <div className="flex items-start gap-4">
+            <div className="rounded-[32px] border border-sky-100 bg-white p-6 text-center shadow-[0_16px_34px_rgba(10,109,255,0.06)]">
+              <div className="flex flex-col items-center gap-4">
                 <div className="rounded-2xl bg-brand-ocean/10 p-3 text-brand-ocean">
                   <FileText className="h-6 w-6" />
                 </div>
@@ -134,7 +134,7 @@ export function QuoteForm() {
         <Reveal delay={0.06}>
           <form
             onSubmit={handleSubmit}
-            className="rounded-[32px] border border-sky-100 bg-white p-6 shadow-[0_16px_34px_rgba(10,109,255,0.06)] md:p-8"
+            className="rounded-[32px] border border-sky-100 bg-white p-6 text-left shadow-[0_16px_34px_rgba(10,109,255,0.06)] md:p-8"
             noValidate
           >
             <div className="grid gap-5 md:grid-cols-2">
@@ -232,7 +232,7 @@ export function QuoteForm() {
               </label>
             </div>
 
-            <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
               <button
                 type="submit"
                 className="glow-button inline-flex items-center justify-center gap-2 rounded-full px-6 py-4 text-sm font-semibold"
@@ -251,7 +251,7 @@ export function QuoteForm() {
               </a>
             </div>
 
-            {feedback ? <p className="mt-4 text-sm text-brand-ocean">{feedback}</p> : null}
+            {feedback ? <p className="mt-4 text-center text-sm text-brand-ocean">{feedback}</p> : null}
           </form>
         </Reveal>
       </div>

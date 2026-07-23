@@ -12,7 +12,7 @@ export function FinalCTA({ onQuoteClick }: FinalCTAProps) {
       <Reveal>
         <div className="relative overflow-hidden rounded-[36px] border border-sky-100 bg-[linear-gradient(135deg,#f8fbff_0%,#e9f4ff_28%,#d8ebff_100%)] px-6 py-12 shadow-[0_18px_40px_rgba(10,109,255,0.08)] md:px-10">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.9),transparent_18%),radial-gradient(circle_at_80%_20%,rgba(10,109,255,0.08),transparent_16%),radial-gradient(circle_at_80%_80%,rgba(72,179,255,0.12),transparent_18%)]" />
-          <div className="relative max-w-3xl">
+          <div className="relative mx-auto max-w-3xl text-center">
             <p className="text-xs font-bold uppercase tracking-[0.32em] text-brand-ocean">
               Chamada final
             </p>
@@ -23,7 +23,7 @@ export function FinalCTA({ onQuoteClick }: FinalCTAProps) {
               Conte com a LD Materiais Eletricos para encontrar qualidade, variedade e atendimento
               rapido.
             </p>
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+            <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
               <button
                 type="button"
                 onClick={onQuoteClick}
