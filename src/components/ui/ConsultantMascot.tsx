@@ -65,7 +65,7 @@ export function ConsultantMascot() {
   const [messages, setMessages] = useState<ChatMessage[]>([
     {
       author: "consultant",
-      text: "Ola! Sou a IA da LD. Me diga qual produto voce procura.",
+      text: "Ola! Eu sou o Deivid, consultor virtual da LD. Me diga qual produto voce procura.",
     },
   ]);
 
@@ -89,7 +89,7 @@ export function ConsultantMascot() {
     <div className="pointer-events-none fixed bottom-3 right-2 z-[120] h-[9.25rem] w-[min(18.75rem,calc(100vw-1.125rem))] sm:right-3">
       <img
         src="/mascote-ld.png"
-        alt="Consultor LD Materiais Eletricos"
+        alt="Deivid, consultor LD Materiais Eletricos"
         className="pointer-events-none absolute bottom-[-0.125rem] right-0 z-10 block w-[5.35rem] select-none object-contain drop-shadow-[0_18px_28px_rgba(2,10,28,0.28)] sm:w-[6.15rem] lg:w-[7rem]"
       />
 
@@ -105,7 +105,7 @@ export function ConsultantMascot() {
                   <span className="block truncate text-[0.58rem] font-bold uppercase tracking-[0.14em] text-sky-200">
                     Assistente virtual
                   </span>
-                  <strong className="block truncate text-sm">IA Consultora LD</strong>
+                  <strong className="block truncate text-sm">Deivid</strong>
                 </div>
               </div>
               <button
@@ -134,7 +134,7 @@ export function ConsultantMascot() {
                   }`}
                 >
                   <span className="text-[0.58rem] font-bold uppercase tracking-[0.08em] opacity-70">
-                    {message.author === "customer" ? "Voce" : "LD"}
+                    {message.author === "customer" ? "Voce" : "Deivid"}
                   </span>
                   <p className="text-xs leading-5">{message.text}</p>
                 </div>
