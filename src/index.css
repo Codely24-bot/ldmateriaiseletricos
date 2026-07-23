@@ -77,6 +77,14 @@
     @apply w-full rounded-2xl border border-sky-100 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-brand-ocean focus:bg-sky-50/40;
   }
 
+  .whatsapp-pulse {
+    animation: whatsapp-pulse 2.4s ease-in-out infinite;
+  }
+
+  .whatsapp-vibrate {
+    animation: whatsapp-vibrate 2.4s ease-in-out infinite;
+  }
+
   select.field-base {
     background-color: #ffffff;
     color: #0f172a;
@@ -85,5 +93,42 @@
   select.field-base option {
     background-color: #ffffff;
     color: #0f172a;
+  }
+}
+
+@keyframes whatsapp-pulse {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+    box-shadow:
+      0 18px 40px rgba(18, 140, 126, 0.34),
+      0 0 0 0 rgba(37, 211, 102, 0.28);
+  }
+
+  48% {
+    transform: translateY(-2px) scale(1.04);
+    box-shadow:
+      0 22px 48px rgba(18, 140, 126, 0.42),
+      0 0 0 13px rgba(37, 211, 102, 0);
+  }
+}
+
+@keyframes whatsapp-vibrate {
+  0%,
+  42%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  48% {
+    transform: rotate(-9deg);
+  }
+
+  54% {
+    transform: rotate(9deg);
+  }
+
+  60% {
+    transform: rotate(-5deg);
   }
 }

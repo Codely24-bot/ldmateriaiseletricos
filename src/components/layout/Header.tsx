@@ -257,10 +257,7 @@ export function Header({
 
   return (
     <>
-      <header
-        id="inicio"
-        className="sticky top-0 z-[90] border-y border-sky-100 bg-white/95 backdrop-blur"
-      >
+      <header className="sticky top-0 z-[90] border-y border-sky-100 bg-white/95 backdrop-blur">
         <div className="lg:hidden border-b border-brand-night bg-brand-night text-white">
           <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] md:px-6">
             <span>Loja online LD</span>

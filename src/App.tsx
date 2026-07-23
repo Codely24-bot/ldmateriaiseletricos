@@ -4,11 +4,13 @@ import { Benefits } from "./components/sections/Benefits";
 import { Categories } from "./components/sections/Categories";
 import { DepartmentPage } from "./components/sections/DepartmentPage";
 import { FinalCTA } from "./components/sections/FinalCTA";
+import { Hero } from "./components/sections/Hero";
 import { Professionals } from "./components/sections/Professionals";
 import { ProductsPage } from "./components/sections/ProductsPage";
 import { QuoteForm } from "./components/sections/QuoteForm";
 import { Footer } from "./components/layout/Footer";
 import { Header } from "./components/layout/Header";
+import { ConsultantMascot } from "./components/ui/ConsultantMascot";
 import { WhatsAppButton } from "./components/ui/WhatsAppButton";
 
 function getDepartmentFromUrl() {
@@ -99,6 +101,10 @@ export default function App() {
           <ProductsPage />
         ) : (
           <>
+            <Hero
+              onPrimaryClick={navigateToProducts}
+              onQuoteClick={() => scrollToSection("orcamento")}
+            />
             <Categories onSelectCategory={handleCategorySelection} />
             <Benefits />
             <QuoteForm />
@@ -109,6 +115,7 @@ export default function App() {
         )}
       </main>
       <Footer />
+      <ConsultantMascot />
       <WhatsAppButton />
     </div>
   );
