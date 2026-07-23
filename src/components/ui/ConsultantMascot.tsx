@@ -167,11 +167,11 @@ export function ConsultantMascot() {
           type="button"
           onClick={() => setIsOpen((value) => !value)}
           aria-label="Abrir chat de duvidas"
-          className="relative inline-flex min-h-[3.375rem] max-w-[9.75rem] items-center gap-2 rounded-full border border-sky-100 bg-gradient-to-b from-white to-sky-50 px-3 py-2 text-left text-xs font-semibold leading-4 text-slate-800 shadow-[0_22px_44px_rgba(14,20,27,0.24)] transition hover:-translate-y-0.5"
+          className="whatsapp-pulse relative inline-flex min-h-[3.375rem] max-w-[9.75rem] items-center gap-2 rounded-full border border-sky-100 bg-gradient-to-b from-white to-sky-50 px-3 py-2 text-left text-xs font-semibold leading-4 text-slate-800 shadow-[0_22px_44px_rgba(14,20,27,0.24)] transition hover:-translate-y-0.5"
         >
           <span className="absolute bottom-[-0.45rem] right-8 h-4 w-4 rotate-45 border-b border-r border-sky-100 bg-sky-50" />
           <span>Precisa de ajuda?</span>
-          <MessageCircleMore className="h-4 w-4 text-brand-ocean" />
+          <MessageCircleMore className="whatsapp-vibrate h-4 w-4 text-brand-ocean" />
         </button>
       </div>
     </div>
