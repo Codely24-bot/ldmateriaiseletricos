@@ -89,12 +89,12 @@ export function Hero({ onPrimaryClick, onQuoteClick }: HeroProps) {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.32 + index * 0.06 }}
-                    className="glass-panel flex items-center gap-3 rounded-2xl px-4 py-4"
+                    className="glass-panel flex items-center gap-3 rounded-2xl bg-white px-4 py-4"
                   >
                     <div className="rounded-xl bg-brand-sky/15 p-2 text-brand-sky">
                       <Icon className="h-5 w-5" />
                     </div>
-                    <span className="text-sm font-semibold text-slate-100">{item}</span>
+                    <span className="text-sm font-semibold text-slate-900">{item}</span>
                   </motion.div>
                 );
               })}
