@@ -1,4 +1,4 @@
-import { MessageCircleMore, Send, X } from "lucide-react";
+import { Send, X } from "lucide-react";
 import { FormEvent, useState } from "react";
 import { departmentCatalog, featuredProducts } from "../../data/siteContent";
 
@@ -93,7 +93,7 @@ export function ConsultantMascot() {
         className="pointer-events-none absolute bottom-[-0.125rem] right-0 z-10 block w-[5.35rem] select-none object-contain drop-shadow-[0_18px_28px_rgba(2,10,28,0.28)] sm:w-[6.15rem] lg:w-[7rem]"
       />
 
-      <div className="pointer-events-auto absolute bottom-[8.1rem] right-0 z-20 grid justify-items-end gap-2 sm:bottom-[9.05rem] sm:right-1 lg:bottom-[10rem] lg:right-2">
+      <div className="pointer-events-auto absolute bottom-[8.55rem] right-0 z-20 grid justify-items-end gap-2 sm:bottom-[9.55rem] sm:right-1 lg:bottom-[10.5rem] lg:right-2">
         {isOpen ? (
           <section className="absolute bottom-[calc(100%+0.75rem)] right-0 flex h-[min(24rem,calc(100dvh-12rem))] w-[min(20.75rem,calc(100vw-2rem))] flex-col overflow-hidden rounded-[24px] border border-sky-100 bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(238,246,250,0.98))] shadow-[0_26px_70px_rgba(7,17,31,0.28)]">
             <div className="flex items-start justify-between gap-3 bg-[radial-gradient(circle_at_100%_0,rgba(72,179,255,0.24),transparent_34%),linear-gradient(135deg,#07111f,#18304b)] px-3 py-3 text-white">
@@ -171,7 +171,6 @@ export function ConsultantMascot() {
         >
           <span className="absolute bottom-[-0.45rem] right-8 h-4 w-4 rotate-45 border-b border-r border-sky-100 bg-sky-50" />
           <span>Precisa de ajuda?</span>
-          <MessageCircleMore className="whatsapp-vibrate h-4 w-4 text-brand-ocean" />
         </button>
       </div>
     </div>
