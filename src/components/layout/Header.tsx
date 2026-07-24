@@ -89,7 +89,7 @@ function DepartmentsMegaMenu({
         <ChevronDown className="h-4 w-4 transition group-hover:rotate-180" />
       </div>
 
-      <div className="pointer-events-none absolute left-0 top-full z-50 mt-3 w-[860px] max-w-[calc(100vw-3rem)] opacity-0 transition duration-200 group-hover:pointer-events-auto group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100">
+      <div className="pointer-events-none absolute left-0 top-full z-50 w-[860px] pt-3 max-w-[calc(100vw-3rem)] opacity-0 transition duration-200 group-hover:pointer-events-auto group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100">
         <div className="overflow-hidden rounded-[18px] border border-sky-100 bg-white shadow-[0_22px_60px_rgba(10,109,255,0.14)]">
           <div className="grid grid-cols-[0.84fr_1.16fr]">
             <div className="max-h-[34rem] overflow-y-auto border-r border-sky-100 bg-sky-50/70 p-4">
