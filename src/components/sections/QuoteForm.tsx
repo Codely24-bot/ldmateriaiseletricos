@@ -134,7 +134,7 @@ export function QuoteForm() {
         <Reveal delay={0.06}>
           <form
             onSubmit={handleSubmit}
-            className="rounded-[32px] border border-sky-100 bg-white p-6 text-left shadow-[0_16px_34px_rgba(10,109,255,0.06)] md:p-8"
+            className="rounded-[32px] border border-brand-sky/25 bg-[linear-gradient(145deg,#07111f_0%,#0a2f66_52%,#0a6dff_100%)] p-6 text-center shadow-[0_22px_52px_rgba(7,17,31,0.24)] md:p-8"
             noValidate
           >
             <div className="grid gap-5 md:grid-cols-2">
@@ -171,7 +171,7 @@ export function QuoteForm() {
 
             <div className="mt-5 grid gap-5 md:grid-cols-2">
               <div>
-                <label className="mb-2 block text-sm font-semibold text-slate-900">Tipo de cliente</label>
+                <label className="mb-2 block text-sm font-semibold text-white">Tipo de cliente</label>
                 <select
                   value={form.customerType}
                   onChange={(event) => updateField("customerType", event.target.value)}
@@ -217,8 +217,8 @@ export function QuoteForm() {
             </div>
 
             <div className="mt-5">
-              <label className="mb-2 block text-sm font-semibold text-slate-900">Anexar lista ou arquivo</label>
-              <label className="flex cursor-pointer items-center justify-between gap-3 rounded-2xl border border-dashed border-sky-200 bg-sky-50/70 px-4 py-4 text-sm text-slate-600 transition hover:border-brand-ocean hover:bg-sky-50">
+              <label className="mb-2 block text-sm font-semibold text-white">Anexar lista ou arquivo</label>
+              <label className="flex cursor-pointer items-center justify-between gap-3 rounded-2xl border border-dashed border-white/35 bg-white/95 px-4 py-4 text-sm text-slate-600 transition hover:border-brand-sky hover:bg-white">
                 <span>{form.fileName || "Selecionar arquivo para referencia no atendimento"}</span>
                 <span className="rounded-full bg-white px-4 py-2 text-xs font-bold uppercase tracking-[0.22em] text-brand-ocean shadow-sm">
                   Escolher
@@ -244,14 +244,14 @@ export function QuoteForm() {
                 href={buildGenericMessage("Ola! Quero enviar minha lista de materiais pelo WhatsApp.")}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-sky-100 px-6 py-4 text-sm font-semibold text-slate-800 transition hover:border-brand-ocean hover:text-brand-ocean"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/35 bg-white/10 px-6 py-4 text-sm font-semibold text-white transition hover:border-brand-sky hover:bg-white hover:text-brand-ocean"
               >
                 <MessageCircleMore className="h-4 w-4" />
                 Enviar lista pelo WhatsApp
               </a>
             </div>
 
-            {feedback ? <p className="mt-4 text-center text-sm text-brand-ocean">{feedback}</p> : null}
+            {feedback ? <p className="mt-4 text-center text-sm font-medium text-white">{feedback}</p> : null}
           </form>
         </Reveal>
       </div>
@@ -278,7 +278,7 @@ function Field({
 }: FieldProps) {
   return (
     <div>
-      <label className="mb-2 block text-sm font-semibold text-slate-900">{label}</label>
+      <label className="mb-2 block text-sm font-semibold text-white">{label}</label>
       <input
         type={type}
         value={value}
@@ -308,7 +308,7 @@ function TextareaField({
 }: TextareaFieldProps) {
   return (
     <div>
-      <label className="mb-2 block text-sm font-semibold text-slate-900">{label}</label>
+      <label className="mb-2 block text-sm font-semibold text-white">{label}</label>
       <textarea
         value={value}
         onChange={(event) => onChange(event.target.value)}
