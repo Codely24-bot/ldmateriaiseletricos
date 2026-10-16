@@ -9,7 +9,7 @@ export const companyInfo = {
   email: "contato@ldmateriaiseletricos.com.br",
   instagram: "@ldmateriaiseletricos",
   instagramUrl: "https://instagram.com/ldmateriaiseletricos",
-  address: "Avenida Central, 1200 - Centro, São Paulo - SP",
+  address: "Av. Waldir Soeiro Emrich, 3161 - Sala 02, Santa Helena (Barreiro) - 30644-000",
   hours: "Seg a Sex, das 8h às 18h | Sáb, das 8h às 13h",
 };
 
