@@ -7,8 +7,6 @@ type ProductCardProps = {
   description: string;
   badge: string;
   image: string;
-  price: string;
-  installment: string;
   availability: string;
 };
 
@@ -18,8 +16,6 @@ export function ProductCard({
   description,
   badge,
   image,
-  price,
-  installment,
   availability,
 }: ProductCardProps) {
   const messageUrl = buildProductMessage(name);
@@ -45,10 +41,11 @@ export function ProductCard({
           <p className="text-sm leading-6 text-slate-600">{description}</p>
         </div>
         <div className="rounded-2xl bg-slate-50 p-4">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">A partir de</p>
-          <p className="mt-2 font-display text-3xl font-semibold text-brand-ocean">{price}</p>
-          <p className="mt-1 text-sm text-slate-500">{installment}</p>
-          <p className="mt-3 text-sm font-semibold text-emerald-600">{availability}</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+            Disponibilidade
+          </p>
+          <p className="mt-2 text-sm font-semibold text-emerald-600">{availability}</p>
+          <p className="mt-1 text-sm text-slate-500">Consulte valores pelo WhatsApp</p>
         </div>
         <div className="flex flex-wrap gap-3">
           <a

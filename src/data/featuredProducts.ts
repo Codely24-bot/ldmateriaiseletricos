@@ -8,8 +8,6 @@ export const featuredProducts = [
       "Rolo de 100 metros para alimentacao e distribuicao com isolacao 750V para instalacoes residenciais e comerciais.",
     badge: "Cabo",
     image: "/products/cabo-flexivel-sil.png",
-    price: "R$ 245,06",
-    installment: "Consulte condicoes no WhatsApp",
     availability: "Em estoque",
   },
   {
@@ -21,8 +19,6 @@ export const featuredProducts = [
       "Disjuntor bipolar padrao DIN, curva C, com corrente nominal de 63A para fixacao em trilho TS-35.",
     badge: "Protecao",
     image: "/products/disjuntor-bifasico-ge.png",
-    price: "R$ 42,58",
-    installment: "Consulte condicoes no WhatsApp",
     availability: "Em estoque",
   },
   {
@@ -34,8 +30,6 @@ export const featuredProducts = [
       "Projetor LED preto 30W 6500K indicado para areas externas, galpoes, quintais e ambientes amplos.",
     badge: "LED",
     image: "/products/projetor-led-philips.png",
-    price: "R$ 117,60",
-    installment: "Consulte condicoes no WhatsApp",
     availability: "So restam 5",
   },
   {
@@ -47,8 +41,6 @@ export const featuredProducts = [
       "Caixa de montagem em PVC bege para instalacoes de sobrepor com dimensoes de 300x300x200mm.",
     badge: "Paineis",
     image: "/products/caixa-montagem-cemar.png",
-    price: "R$ 253,42",
-    installment: "Consulte condicoes no WhatsApp",
     availability: "Em estoque",
   },
   {
@@ -60,8 +52,6 @@ export const featuredProducts = [
       "Alicate universal com acabamento polido, comprimento de 8 polegadas e isolacao ate 1000V conforme NR-10.",
     badge: "Profissional",
     image: "/products/alicate-tramontina-nr10.png",
-    price: "R$ 33,99",
-    installment: "Consulte condicoes no WhatsApp",
     availability: "Em estoque",
   },
   {
@@ -73,8 +63,6 @@ export const featuredProducts = [
       "Eletroduto corrugado em PVC autoextinguivel na cor amarela, ideal para protecao e passagem de cabos.",
     badge: "Infraestrutura",
     image: "/products/mangueira-corrugada-tigre.png",
-    price: "R$ 86,88",
-    installment: "Consulte condicoes no WhatsApp",
     availability: "Em estoque",
   },
 ] as const;

@@ -187,7 +187,6 @@ function DepartmentsMegaMenu({
                             {product.name}
                           </p>
                           <div className="mt-1 flex items-center gap-3 text-sm">
-                            <span className="text-slate-500">{product.price}</span>
                             <span className="text-emerald-600">{product.availability}</span>
                           </div>
                         </div>

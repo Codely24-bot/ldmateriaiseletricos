@@ -241,8 +241,6 @@ export const featuredProducts = [
     description: "Rolo demonstrativo para alimentação e distribuição com capa resistente.",
     badge: "Mais procurado",
     image: "/product-wire.svg",
-    price: "R$ 189,90",
-    installment: "ou 6x de R$ 31,65",
     availability: "Pronta entrega",
   },
   {
@@ -253,8 +251,6 @@ export const featuredProducts = [
     description: "Acabamento moderno para obras residenciais e comerciais.",
     badge: "Destaque",
     image: "/product-switch.svg",
-    price: "R$ 24,90",
-    installment: "ou 3x de R$ 8,30",
     availability: "Estoque local",
   },
   {
@@ -265,8 +261,6 @@ export const featuredProducts = [
     description: "Proteção eficiente para circuitos críticos e quadros de distribuição.",
     badge: "Segurança",
     image: "/product-breaker.svg",
-    price: "R$ 79,90",
-    installment: "ou 4x de R$ 19,97",
     availability: "Pronta entrega",
   },
   {
@@ -277,8 +271,6 @@ export const featuredProducts = [
     description: "Iluminação uniforme para ambientes corporativos e residenciais.",
     badge: "Novidade",
     image: "/product-lighting.svg",
-    price: "R$ 54,90",
-    installment: "ou 5x de R$ 10,98",
     availability: "Envio em 24h",
   },
   {
@@ -289,8 +281,6 @@ export const featuredProducts = [
     description: "Organização, proteção e expansão para instalações elétricas.",
     badge: "Destaque",
     image: "/product-panel.svg",
-    price: "R$ 129,90",
-    installment: "ou 6x de R$ 21,65",
     availability: "Sob consulta",
   },
   {
@@ -301,8 +291,6 @@ export const featuredProducts = [
     description: "Ferramentas demonstrativas para manutenção, montagem e instalação.",
     badge: "Profissional",
     image: "/product-tools.svg",
-    price: "R$ 219,90",
-    installment: "ou 8x de R$ 27,48",
     availability: "Pronta entrega",
   },
 ];

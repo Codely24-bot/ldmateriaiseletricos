@@ -48,7 +48,7 @@ export function Hero({ onPrimaryClick, onQuoteClick }: HeroProps) {
             className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-300"
           >
             Estruturei a home para funcionar como vitrine de e-commerce: busca em destaque,
-            departamentos visiveis, produtos com preco demonstrativo e atalhos para compra ou
+            departamentos visiveis, produtos com imagens reais e atalhos para compra ou
             atendimento.
           </motion.p>
           <motion.div
