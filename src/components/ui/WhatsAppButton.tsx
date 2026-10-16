@@ -3,7 +3,7 @@ import { buildGenericMessage } from "../../utils/whatsapp";
 export function WhatsAppButton() {
   return (
     <a
-      href={buildGenericMessage("Olá! Quero falar com a equipe da LD Materiais Elétricos.")}
+      href={buildGenericMessage("Olá! Quero falar com a equipe da L&D Materiais Elétricos.")}
       target="_blank"
       rel="noreferrer"
       aria-label="Falar no WhatsApp"

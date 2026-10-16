@@ -18,7 +18,7 @@ export function Hero({ onPrimaryClick, onQuoteClick }: HeroProps) {
       <div className="relative border-b border-brand-line bg-brand-night">
         <img
           src="/hero-ld-banner.png"
-          alt="LD Materiais Eletricos"
+          alt="L&D Materiais Eletricos"
           className="h-auto w-full object-cover"
         />
       </div>
@@ -31,7 +31,7 @@ export function Hero({ onPrimaryClick, onQuoteClick }: HeroProps) {
             transition={{ duration: 0.55 }}
             className="inline-flex rounded-full border border-brand-line bg-white/5 px-4 py-2 text-xs font-bold uppercase tracking-[0.3em] text-brand-sky"
           >
-            Loja online LD Materiais Eletricos
+            Loja online L&D Materiais Eletricos
           </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 26 }}

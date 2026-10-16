@@ -89,7 +89,7 @@ export function Footer() {
       </div>
       <div className="border-t border-sky-100">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-6 text-sm text-slate-500 md:flex-row md:items-center md:justify-between md:px-6">
-          <p>© 2026 LD Materiais Eletricos. Todos os direitos reservados.</p>
+          <p>© 2026 L&D Materiais Eletricos. Todos os direitos reservados.</p>
           <p>Estrutura pronta para futuras integracoes e atualizacao da logo oficial.</p>
         </div>
       </div>

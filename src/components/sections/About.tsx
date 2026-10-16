@@ -22,7 +22,7 @@ export function About() {
           <SectionHeading
             eyebrow="Sobre a empresa"
             title="Energia, qualidade e confianca para cada projeto"
-            description="A LD Materiais Eletricos trabalha para oferecer produtos de qualidade e solucoes para instalacoes eletricas residenciais, comerciais e industriais. Nosso compromisso e proporcionar um atendimento proximo, agil e seguro para cada cliente."
+            description="A L&D Materiais Eletricos trabalha para oferecer produtos de qualidade e solucoes para instalacoes eletricas residenciais, comerciais e industriais. Nosso compromisso e proporcionar um atendimento proximo, agil e seguro para cada cliente."
           />
 
           <div className="mt-8 grid gap-4 sm:grid-cols-2">

@@ -262,7 +262,7 @@ export function Header({
           <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] md:px-6">
             <span>Loja online LD</span>
             <a
-              href={buildGenericMessage("Ola! Quero ajuda para comprar na loja online da LD Materiais Eletricos.")}
+              href={buildGenericMessage("Ola! Quero ajuda para comprar na loja online da L&D Materiais Eletricos.")}
               target="_blank"
               rel="noreferrer"
               className="text-sky-200 transition hover:text-white"
@@ -302,7 +302,7 @@ export function Header({
 
             <div className="ml-auto flex items-center gap-3">
               <a
-                href={buildGenericMessage("Ola! Quero ajuda para comprar na loja online da LD Materiais Eletricos.")}
+                href={buildGenericMessage("Ola! Quero ajuda para comprar na loja online da L&D Materiais Eletricos.")}
                 target="_blank"
                 rel="noreferrer"
                 className="glow-button inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-semibold"
@@ -337,7 +337,7 @@ export function Header({
               </button>
 
               <a
-                href={buildGenericMessage("Ola! Quero ajuda para comprar na loja online da LD Materiais Eletricos.")}
+                href={buildGenericMessage("Ola! Quero ajuda para comprar na loja online da L&D Materiais Eletricos.")}
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Atendimento"
@@ -545,7 +545,7 @@ export function Header({
 
               <div className="border-t border-sky-100 px-5 py-4">
                 <a
-                  href={buildGenericMessage("Ola! Quero ajuda para comprar na loja online da LD Materiais Eletricos.")}
+                  href={buildGenericMessage("Ola! Quero ajuda para comprar na loja online da L&D Materiais Eletricos.")}
                   target="_blank"
                   rel="noreferrer"
                   className="glow-button inline-flex w-full items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold"

@@ -1,5 +1,5 @@
 export const companyInfo = {
-  name: "LD Materiais Elétricos",
+  name: "L&D Materiais Elétricos",
   shortName: "LD",
   tagline: "Energia, qualidade e confiança para cada projeto",
   phoneNumber: "5531989524372",

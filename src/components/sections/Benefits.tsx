@@ -10,7 +10,7 @@ export function Benefits() {
     <section className="mx-auto max-w-7xl px-4 py-24 md:px-6">
       <SectionHeading
         eyebrow="Diferenciais"
-        title="Por que escolher a LD Materiais Eletricos?"
+        title="Por que escolher a L&D Materiais Eletricos?"
         description="A proposta do site e mostrar uma empresa solida, preparada para orientar a compra e responder com velocidade, sem perder clareza comercial."
         align="center"
       />

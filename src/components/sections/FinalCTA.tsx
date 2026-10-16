@@ -20,7 +20,7 @@ export function FinalCTA({ onQuoteClick }: FinalCTAProps) {
               Seu projeto comeca com os materiais certos
             </h2>
             <p className="mt-5 text-base leading-7 text-slate-600 md:text-lg">
-              Conte com a LD Materiais Eletricos para encontrar qualidade, variedade e atendimento
+              Conte com a L&D Materiais Eletricos para encontrar qualidade, variedade e atendimento
               rapido.
             </p>
             <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
@@ -33,7 +33,7 @@ export function FinalCTA({ onQuoteClick }: FinalCTAProps) {
                 <ArrowRight className="h-4 w-4" />
               </button>
               <a
-                href={buildGenericMessage("Ola! Quero falar agora com a LD Materiais Eletricos.")}
+                href={buildGenericMessage("Ola! Quero falar agora com a L&D Materiais Eletricos.")}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-sky-100 bg-white px-6 py-4 text-sm font-semibold text-slate-800 transition hover:border-brand-ocean hover:text-brand-ocean"

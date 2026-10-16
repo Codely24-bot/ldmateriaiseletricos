@@ -89,7 +89,7 @@ export function ConsultantMascot() {
     <div className="pointer-events-none fixed bottom-3 right-2 z-[120] h-[9.25rem] w-[min(18.75rem,calc(100vw-1.125rem))] sm:right-3">
       <img
         src="/mascote-ld.png"
-        alt="Deivid, consultor LD Materiais Eletricos"
+        alt="Deivid, consultor L&D Materiais Eletricos"
         className="pointer-events-none absolute bottom-[-0.125rem] right-0 z-10 block w-[5.35rem] select-none object-contain drop-shadow-[0_18px_28px_rgba(2,10,28,0.28)] sm:w-[6.15rem] lg:w-[7rem]"
       />
 
