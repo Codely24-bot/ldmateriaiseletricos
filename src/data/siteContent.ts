@@ -9,7 +9,7 @@ export const companyInfo = {
   email: "contato@ldmateriaiseletricos.com.br",
   instagram: "@ldmateriaiseletricos",
   instagramUrl: "https://instagram.com/ldmateriaiseletricos",
-  address: "Av. Waldir Soeiro Emrich, 3161 - Sala 02, Santa Helena (Barreiro) - 30644-000",
+  address: "Av. Waldir Soeiro Emrich, 3161 - Sala 02, Santa Helena (Barreiro) - 30644-000 - Belo Horizonte / MG",
   hours: "Seg a Sex, das 8h às 18h | Sáb, das 8h às 13h",
 };
 

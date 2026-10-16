@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import {
   ChevronDown,
   ChevronRight,
+  Instagram,
   MapPin,
   Menu,
   MessageCircleMore,
@@ -261,14 +262,24 @@ export function Header({
         <div className="lg:hidden border-b border-brand-night bg-brand-night text-white">
           <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] md:px-6">
             <span>Loja online LD</span>
-            <a
-              href={buildGenericMessage("Ola! Quero ajuda para comprar na loja online da L&D Materiais Eletricos.")}
-              target="_blank"
-              rel="noreferrer"
-              className="text-sky-200 transition hover:text-white"
-            >
-              Compre pelo WhatsApp
-            </a>
+            <div className="flex items-center gap-4">
+              <a
+                href={companyInfo.instagramUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="text-sky-200 transition hover:text-white"
+              >
+                Siga no Instagram
+              </a>
+              <a
+                href={buildGenericMessage("Ola! Quero ajuda para comprar na loja online da L&D Materiais Eletricos.")}
+                target="_blank"
+                rel="noreferrer"
+                className="text-sky-200 transition hover:text-white"
+              >
+                Compre pelo WhatsApp
+              </a>
+            </div>
           </div>
         </div>
 
@@ -310,6 +321,16 @@ export function Header({
                 <MessageCircleMore className="h-4 w-4" />
                 Atendimento
               </a>
+              <a
+                href={companyInfo.instagramUrl}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`Instagram ${companyInfo.instagram}`}
+                className="brand-icon-button inline-flex items-center gap-2 rounded-full px-4 py-3 text-sm font-semibold"
+              >
+                <Instagram className="h-4 w-4" />
+                Instagram
+              </a>
               <button
                 type="button"
                 className="brand-button-muted inline-flex items-center gap-2 rounded-full px-4 py-3 text-sm font-semibold"
@@ -344,6 +365,16 @@ export function Header({
                 className="brand-icon-button inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl"
               >
                 <MessageCircleMore className="h-5 w-5" />
+              </a>
+
+              <a
+                href={companyInfo.instagramUrl}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`Instagram ${companyInfo.instagram}`}
+                className="brand-icon-button inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl"
+              >
+                <Instagram className="h-5 w-5" />
               </a>
 
               <button
@@ -532,6 +563,15 @@ export function Header({
                       <MapPin className="h-4 w-4 text-sky-200" />
                       Nossas informacoes
                     </button>
+                    <a
+                      href={companyInfo.instagramUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-3 rounded-2xl bg-white/8 px-4 py-3 text-left text-sm font-semibold"
+                    >
+                      <Instagram className="h-4 w-4 text-sky-200" />
+                      Instagram
+                    </a>
                     <button
                       type="button"
                       className="flex items-center gap-3 rounded-2xl bg-white/8 px-4 py-3 text-left text-sm font-semibold"
